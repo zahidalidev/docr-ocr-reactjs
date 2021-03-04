@@ -5,7 +5,8 @@ import OCR from './pages/OCR';
 function App() {
   return (
     <div className="App">
-      <Appbar />
+      {/*main Components */}
+      <Appbar /> 
       <OCR />
       <Footer />
     </div>
