@@ -6,7 +6,6 @@ import FormControl from '@material-ui/core/FormControl';
 import Button from '@material-ui/core/Button';
 import axios from "axios"
 import Artyom from 'artyom.js';
-import { CircularProgressbar } from 'react-circular-progressbar';
 
 import SpeechLangs from "../assets/languages/translatorLangages"
 import convert from './convert.png';

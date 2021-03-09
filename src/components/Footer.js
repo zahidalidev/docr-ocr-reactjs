@@ -13,11 +13,11 @@ class Footer extends Component {
                     <div style={{ backgroundColor: colors.secondary }}>
                         <div className="container">
                             <div className="row py-4 d-flex align-items-center">
-                                <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                <div className="col-md-4 col-lg-4 text-center text-md-left mb-4 mb-md-0">
                                     <h6 className="mb-0" style={{ fontWeight: "350" }} >Get connected with us on social networks!</h6>
                                 </div>
 
-                                <div className="col-md-6 col-lg-7 text-center text-md-right">
+                                <div className="col-md-8 col-lg-8 text-center text-md-right">
                                     <a className="fb-ic">
                                         <i className="text-white mr-4">Zahid Ali</i>
                                     </a>
@@ -29,9 +29,7 @@ class Footer extends Component {
                                         <i className="fa fa-github text-white mr-4"> </i>
                                     </a>
 
-                                    <a target="_blank" href="https://www.linkedin.com/in/mrzahidali/" className="li-ic">
-                                        <i className="fa fa-linkedin text-white mr-4"> </i>
-                                    </a>
+
 
                                     <a className="fb-ic">
                                         <i className="text-white mr-4">Abdul Samad</i>
@@ -44,12 +42,10 @@ class Footer extends Component {
                                         <i className="fa fa-github text-white mr-4"> </i>
                                     </a>
 
-                                    <a target="_blank" href="https://www.linkedin.com/in/abdul-samad-61a9461a0" className="li-ic">
-                                        <i className="fa fa-linkedin text-white mr-4"> </i>
-                                    </a>
+
 
                                     <a className="fb-ic">
-                                        <i className="text-white mr-4">Ahmad Bilal</i>
+                                        <i className="text-white mr-4">Shayan Mukhtar</i>
                                     </a>
                                     <a target="_blank" href="https://www.facebook.com/prince.bhatti.3979489" className="fb-ic">
                                         <i className="fa fa-facebook-f text-white mr-4"> </i>
@@ -59,9 +55,11 @@ class Footer extends Component {
                                         <i className="fa fa-github text-white mr-4"> </i>
                                     </a>
 
-                                    <a target="_blank" href="https://www.linkedin.com/in/abdul-samad-61a9461a0" className="li-ic">
-                                        <i className="fa fa-linkedin text-white mr-4"> </i>
+
+                                    <a className="fb-ic">
+                                        <i className="text-white mr-4">Muhammad Waleed</i>
                                     </a>
+
 
                                 </div>
                             </div>
@@ -114,16 +112,18 @@ class Footer extends Component {
                                 <hr style={{ backgroundColor: colors.secondary, width: "60px" }} className="accent-2 col-md-4 mt-0 d-inline-block mx-auto" />
                                 <p>
                                     <i className="fa fa-envelope mr-3"></i> m.zahidalidev@gmail.com</p>
-                                <p>
-                                    <i className="fa fa-phone mr-3"></i> + 92 336 7088 018</p>
+                                {/* <p>
+                                    <i className="fa fa-phone mr-3"></i> + 92 336 7088 018</p> */}
                                 <p>
                                     <i className="fa fa-envelope mr-3"></i> asamadskt@gmail.com</p>
+                                {/* <p>
+                                    <i className="fa fa-phone mr-3"></i> + 92 346 6719 203</p> */}
                                 <p>
-                                    <i className="fa fa-phone mr-3"></i> + 92 346 6719 203</p>
+                                    <i className="fa fa-envelope mr-3"></i> shayanmukhtarccw@gmail.com</p>
                                 <p>
-                                    <i className="fa fa-envelope mr-3"></i> ahmadbilaldev@gmail.com</p>
-                                <p>
-                                    <i className="fa fa-phone mr-3"></i> +92 316 6793715</p>
+                                    <i className="fa fa-envelope mr-3"></i> mohd.waleed577@gmail.com</p>
+                                {/* <p>
+                                    <i className="fa fa-phone mr-3"></i> +92 316 6793715</p> */}
 
                             </div>
                         </div>

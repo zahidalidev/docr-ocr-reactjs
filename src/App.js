@@ -14,7 +14,7 @@ class App extends Component {
   state = {
     currentFile: null,
     scannedText: "",
-    loading: 1
+    loading: 1,
   }
 
   handleChangeImage = (e) => {
@@ -50,7 +50,7 @@ class App extends Component {
         <Route render={(props) => <Appbar {...props} />} />
 
         <Switch>
-          <Route path="/" exact render={(props) => <OCR {...props} onHandleChangeImage={this.handleChangeImage} onSaveFile={this.saveFile} onLoading={loading} />} />
+          <Route path="/" exact render={(props) => <OCR {...props} onCurrentFile={this.state.currentFile} onHandleChangeImage={this.handleChangeImage} onSaveFile={this.saveFile} onLoading={loading} />} />
           <Route path="/translator" exact render={(props) => <Translator {...props} onScannedText={scannedText} />} />
           <Route path="/aboutus" exact render={(props) => <AboutUs {...props} />} />
           <Redirect to="/" />

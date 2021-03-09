@@ -8,7 +8,7 @@ import colors from '../config/colors';
 class UploadFile extends Component {
 
     render() {
-        const { onHandleChange, onSaveFileChild } = this.props;
+        const { onHandleChange, onSaveFileChild, onCurrentFileChild } = this.props;
 
         return (
             <div className="d-flex" style={{ borderColor: colors.lightGrey, borderWidth: 2, borderStyle: "dashed", margin: "2vw", flexDirection: 'column', alignItems: "center", marginTop: "4vw", marginBottom: "-4vw" }} >
@@ -26,10 +26,14 @@ class UploadFile extends Component {
                         <label className="btn btn-default" style={{ fontSize: '1vw', color: 'grey', fontWeight: "500", borderWidth: 2, borderColor: colors.secondary, paddingLeft: "2vw", paddingRight: "2vw" }} >
                             UPLOAD PICTURE <input onChange={onHandleChange} type="file" hidden />
                         </label>
+                        {onCurrentFileChild !== null ?
+                            <p style={{ color: "green" }} >{onCurrentFileChild.name} Uploaded Successfully</p>
+                            : null
+                        }
                     </div>
                 </div>
 
-                <div className="d-flex" style={{ flexDirection: 'column', alignItems: "center", backgroundColor: "#eff4f9", padding: "2vw", width: "100%" }} >
+                {/* <div className="d-flex" style={{ flexDirection: 'column', alignItems: "center", backgroundColor: "#eff4f9", padding: "2vw", width: "100%" }} >
                     <p style={{ fontWeight: "bold", color: colors.grey }} >- OR - Paste URL</p>
 
                     <div className="d-flex" style={{ flexDirection: 'row', alignItems: "center", width: "100%" }}  >
@@ -38,9 +42,9 @@ class UploadFile extends Component {
                         </div>
                         <input type="text" style={{ width: "90%", padding: "0.5vw", borderWidth: 1.4, borderColor: colors.secondary }} />
                     </div>
-                </div>
+                </div> */}
 
-                <Button onClick={() => onSaveFileChild(this.props.onHistory)} variant="contained" style={{ marginTop: "2vw", marginBottom: "2vw", paddingLeft: "1.6vw", paddingRight: "1.6vw", backgroundColor: colors.primary, color: colors.white }}>
+                <Button onClick={() => onSaveFileChild(this.props.onHistory)} variant="contained" style={{ marginTop: "1vw", marginBottom: "2vw", paddingLeft: "1.6vw", paddingRight: "1.6vw", backgroundColor: colors.primary, color: colors.white }}>
                     Submit
                 </Button>
 

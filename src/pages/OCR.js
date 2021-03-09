@@ -7,7 +7,7 @@ import UploadFile from '../components/UploadFile';
 class OCR extends Component {
 
     render() {
-        const { onLoading, onHandleChangeImage, onSaveFile } = this.props;
+        const { onLoading, onHandleChangeImage, onSaveFile, onCurrentFile } = this.props;
         return (
             <div>
                 {onLoading !== 1 ?
@@ -19,7 +19,7 @@ class OCR extends Component {
                     : null
                 }
 
-                <UploadFile onHistory={this.props.history} onHandleChange={onHandleChangeImage} onSaveFileChild={onSaveFile} />
+                <UploadFile onCurrentFileChild={onCurrentFile} onHistory={this.props.history} onHandleChange={onHandleChangeImage} onSaveFileChild={onSaveFile} />
             </div>
         );
     }
