@@ -8,12 +8,7 @@ import { useHistory } from "react-router"
 import colors from "../config/colors"
 
 export default class Appbar extends Component {
-    // const history = useHistory()
 
-    handleNavigation = () => {
-        console.log("push")
-        this.props.history.push('/aboutus')
-    }
     render() {
         return (
             <div style={{ flexGrow: 1, }}>
@@ -27,7 +22,8 @@ export default class Appbar extends Component {
                         }}>
                             Doc OCR
                     </Typography>
-                        <Typography onClick={() => this.handleNavigation()} variant="h6" style={{ cursor: "pointer", fontWeight: "Bold", marginRight: "1vw" }} color="inherit">About</Typography>
+                        <Typography onClick={() => this.props.history.push('/translator')} variant="h6" style={{ cursor: "pointer", fontWeight: "Bold", marginRight: "2vw" }} color="inherit">Translator</Typography>
+                        <Typography onClick={() => this.props.history.push('/aboutus')} variant="h6" style={{ cursor: "pointer", fontWeight: "Bold", marginRight: "1vw" }} color="inherit">About</Typography>
                     </Toolbar>
                 </AppBar>
             </div>

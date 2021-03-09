@@ -8,10 +8,10 @@ import colors from '../config/colors';
 class UploadFile extends Component {
 
     render() {
-        const { onHandleChange, onSaveFile } = this.props;
+        const { onHandleChange, onSaveFileChild } = this.props;
 
         return (
-            <div className="d-flex" style={{ borderColor: colors.lightGrey, borderWidth: 2, borderStyle: "dashed", margin: "2vw", flexDirection: 'column', alignItems: "center" }} >
+            <div className="d-flex" style={{ borderColor: colors.lightGrey, borderWidth: 2, borderStyle: "dashed", margin: "2vw", flexDirection: 'column', alignItems: "center", marginTop: "4vw", marginBottom: "-4vw" }} >
                 <div className="d-flex" style={{ padding: "3vw", flexDirection: 'column', alignItems: "center" }} >
                     <div>
                         <img src="https://www.prepostseo.com/imgs/upload-icon.svg" style={{ width: "7vw", height: "7vw" }} />
@@ -40,7 +40,7 @@ class UploadFile extends Component {
                     </div>
                 </div>
 
-                <Button onClick={onSaveFile} variant="contained" style={{ marginTop: "2vw", marginBottom: "2vw", paddingLeft: "1.6vw", paddingRight: "1.6vw", backgroundColor: colors.primary, color: colors.white }}>
+                <Button onClick={() => onSaveFileChild(this.props.onHistory)} variant="contained" style={{ marginTop: "2vw", marginBottom: "2vw", paddingLeft: "1.6vw", paddingRight: "1.6vw", backgroundColor: colors.primary, color: colors.white }}>
                     Submit
                 </Button>
 
