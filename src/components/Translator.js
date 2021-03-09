@@ -11,6 +11,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import SpeechLangs from "../assets/languages/translatorLangages"
 import convert from './convert.png';
 import colors from "../config/colors";
+import Spinner from "../components/Spiner"
 
 const Jarvis = new Artyom();
 
@@ -89,9 +90,7 @@ class Translator extends Component {
 
                 {loading ?
                     <div className="d-flex" style={{ backgroundColor: "rgba(234, 227, 227, 0.5)", width: "100%", height: "100%", position: "absolute", alignItems: "center", justifyContent: "center", flexDirection: 'column' }} >
-                        <div className="d-flex" style={{ width: "8vw", height: "8vw", marginTop: "-10vw" }} >
-                            <CircularProgressbar />;
-                    </div>
+                        <Spinner />
                     </div>
                     : null
                 }
